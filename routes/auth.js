@@ -17,6 +17,18 @@ router.post('/login', (req, res) => {
     res.send('We are on login');
 });
 
+router.post('/email-verification', (req, res) => {
+    res.send('We are on email-verification');
+});
+
+router.get('/email-verification', (req, res) => {
+    res.send('We are on email-verification');
+});
+
+router.post('/logout', (req, res) => {
+    res.send('We are on logout');
+});
+
 
 
 module.exports = router;
