@@ -38,10 +38,7 @@ const UserSchema = mongoose.Schema({
         type: mongoose.Types.ObjectId,
         ref: 'PreviousOrders'
     }],
-    currentBundle: [{
-        type: mongoose.Types.ObjectId,
-        ref: 'CurrentBundle'
-    }]
+    bundle: {type: mongoose.Types.ObjectId, ref: 'Bundle' }
 });
 
 

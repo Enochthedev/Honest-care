@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const CartSchema = mongoose.Schema({
+const BundleSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
     user: { type: mongoose.Types.ObjectId, ref: 'User' },
     products: [{
@@ -13,4 +13,4 @@ const CartSchema = mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Cart', CartSchema);
+module.exports = mongoose.model('Bundle', BundleSchema);
