@@ -30,13 +30,9 @@ const UserSchema = mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    Order: [{
+    currentBundle: [{
         type: mongoose.Types.ObjectId,
-        ref: 'User'
-    }],
-    BundleHistory: [{
-        type: mongoose.Types.ObjectId,
-        ref: 'PreviousOrders'
+        ref: 'Bundle'
     }],
     
     
